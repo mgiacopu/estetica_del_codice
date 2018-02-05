@@ -12,12 +12,11 @@ function draw() {
     translate(px*scaling, py*scaling);
     stroke(255);
     if (random() > 0.5) {
-        line(0, 0, scaling, scaling); 
-        px++;
+        line(0, 0, scaling, scaling);
     } else {
         line(scaling, 0, 0, scaling);
-        px++;
     }
+    px++;
     if (px * scaling > width) {
         px = 0;
         py++;
